@@ -1,0 +1,42 @@
+@font-face {
+    font-family: "Scto";
+    src: url("/assets/fonts/SctoGroteskA-Regular.woff2") format("woff2");
+    font-weight: normal;
+}
+
+@font-face {
+    font-family: "Scto";
+    src: url("/assets/fonts/SctoGroteskA-Medium.woff2") format("woff2");
+    font-weight: 500;
+}
+
+@font-face {
+    font-family: "Scto";
+    src: url("/assets/fonts/SctoGroteskA-Bold.woff2") format("woff2");
+    font-weight: 600;
+}
+
+:root {
+    --rosa: #f9cdcd;
+    --grey:  #252422;
+    --main-bg: #f4f4f4;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+    font-family: "Scto";
+    color: #000;^
+}
+
+.darkBG {
+    background: #333;
+    color: #fff;
+}
+
+.darkBG  a {
+    color: #fff;
+}

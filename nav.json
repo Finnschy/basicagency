@@ -1,0 +1,32 @@
+[
+    {
+        "name": "Home",
+        "url": "/",
+        "render": "index"
+    },
+    {
+        "name": "Work",
+        "url": "/work",
+        "render": "work"
+    },
+    {
+        "name": "About",
+        "url": "/about",
+        "render": "about"
+    },
+    {
+        "name": "News",
+        "url": "/news",
+        "render": "news"
+    },
+    {
+        "name": "Thinking",
+        "url": "/thinking",
+        "render": "thinking"
+    },
+    {
+        "name": "Contact",
+        "url": "/contact",
+        "render": "contact"
+    }
+]
