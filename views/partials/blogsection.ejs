@@ -1,0 +1,12 @@
+    <% littleNewsData.forEach(news => { %>
+        <div class="ftNewsFlex">
+            <img class="ftNewsImg" src="<%= news.img %>" alt="">
+            <div class="ftNewsCopy">
+                <h2 class="regularHL"><%= news.headline %></h2>
+                <div>
+                <p><%= news.category %><span><%= news.date %></span></p>
+            </div>
+            </div>
+            <img class="arrow"src="assets/img/arrow.svg" alt="">
+        </div>
+    <% }) %>

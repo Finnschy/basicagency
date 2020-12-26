@@ -1,8 +1,54 @@
 <%- include("./partials/head.ejs") %>
-<%- include("./partials/nav.ejs") %>
-<main>
-    <h1>WHAT'S NEXT <br> STARTS</h1>
-    <h2 class="h2LikeH1 alignRight">HERE</h2>
-</main>
-<%- include("./partials/footer.ejs") %>
+    <%- include("./partials/nav.ejs") %>
+        <main>
+            <section class="headlineSect">
+                <h1>WHAT'S NEXT <br> STARTS</h1>
+                <h2 class="h2LikeH1 alignRight"> ●HERE</h2>
+                <section class="videoContainer">
+                    <video autoplay muted src="assets/img/Hero.mp4"></video>
+                </section>
+            </section>
 
+
+            <section class="littleAbout">
+
+                <div>
+                    <p class="small14pxP">STRATEGY, DESIGN, TECHNOLOGY</p>
+                    <h2>BASIC® is a branding and digital design agency building products, services, and ecommerce
+                        experiences that turn cultural values into company value.</h2>
+                    <a class="aBtn" href="#">SEE THE WORK</a>
+                </div>
+
+                <div>
+                    <img src="assets/img/footer-logo-bg-white.svg" alt="">
+                </div>
+
+            </section>
+
+            <section class="ftEngage">
+                <h2>FEATURED <br> ENGAGEMENTS</h2>
+                <p>vertical scroll lol</p>
+            </section>
+
+            <section class="darkSect">
+                <section class="darkSectFlex">
+                    <div>
+                        <h2 class="h2LikeH1">BASIC® HELPS <br> BRANDS <br> ●CONNECT <br> W/ CULTURE</h2>
+                        <p class="subHL">ADWEEK <span class="boldHL">(AGENCY SPOTLIGHT)</span></p>
+                        <a class="aBtnRosa" href="#">ABOUT US</a>
+                    </div>
+                    <div>
+                        <video autoplay muted src="assets/img/Culture.mp4"></video>
+                    </div>
+                </section>
+                <section class="ftNews">
+                    <h2>FEATURED <br> NEWS</h2>
+                <%- include("./partials/blogsection.ejs") %>
+                </section>
+
+            </section>
+
+
+
+        </main>
+        <%# include("./partials/footer.ejs") %>

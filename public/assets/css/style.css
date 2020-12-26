@@ -36,8 +36,8 @@ body, .lightBG {
     background: var(--main-bg);
 }
 
-.darkBG {
-    background: #333;
+.darkBG, .darkSect {
+    background: var(--grey);
 }
 
 .darkBG nav ul li a {
@@ -76,6 +76,10 @@ h1, .h2LikeH1 {
 
 h2 {
     font-size: 2.563rem;
+}
+
+.regularHL {
+    font-weight: 400;
 }
 
 .boldHL {
@@ -118,8 +122,116 @@ h6 {
     font-size: 0.563rem;
 }
 
-main {
+.videoContainer video {
+    width: 100%;
+}
+
+.headlineSect, .littleAbout, .ftEngage {
     width: 95%;
     margin: 0 auto;
 }
- 
+
+.littleAbout, .darkSectFlex, .ftNewsFlex {
+    display: flex;
+    justify-content: space-between;
+}
+
+.littleAbout {
+    margin-top: 1.5rem;
+    margin-bottom: 10rem;
+    border-top: 1px solid #000;
+    border-bottom: 1px solid #000;
+    padding-bottom: 15rem;
+}
+
+.littleAbout div:nth-of-type(1) {
+    width: 45%;
+}
+
+.littleAbout div:nth-of-type(1) p {
+    margin-top: 1.5rem;
+}
+
+.littleAbout div:nth-of-type(1) h2 {
+    margin: 2.5rem 0;
+}
+
+.littleAbout div:nth-of-type(2) img {
+    width: 30rem;
+    margin-top: 4rem;
+}
+
+.aBtn , .aBtnRosa {
+    padding: .5rem 2.7rem;
+    border-radius: 2rem;
+}
+
+.aBtn {
+    border: 1px solid #000;
+}
+
+.aBtnRosa {
+    border: 1px solid var(--rosa);
+}
+
+.aBtnRosa:hover {
+    background: var(--rosa);
+    color: var(--grey);
+}
+
+.aBtn:hover {
+    background: #000;
+    color: #fff;
+}
+
+.darkSect {
+    padding: 6rem 2.75rem;
+}
+
+.darkSect h2, .darkSect p, .darkSect span, .darkSect a {
+    color: var(--rosa);
+}
+
+.h2LikeH1{
+    line-height: 5rem;
+}
+
+.subHL {
+    margin: 1rem 0 5rem 0;
+}
+
+.ftNews {
+    margin-top: 10rem;
+}
+
+.ftNewsFlex {
+    border-top: 1px solid var(--rosa);
+    padding-top: 1rem;
+    margin-top: 5rem;
+}
+
+.ftNewsImg {
+
+    width: 30vw;
+    height: auto;
+    margin-right: 1rem;
+}
+
+.ftNewsCopy {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.ftNewsCopy h2 {
+    width: 54.5%;
+}
+
+.ftNewsCopy p span {
+    margin-left: 2rem;
+}
+
+.arrow {
+    align-self: flex-start;
+    width: 3rem;
+}

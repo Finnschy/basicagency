@@ -1,0 +1,20 @@
+[
+    {
+        "img": "assets/img/Adweek.jpg",
+        "headline": "BASIC® Deemed One of the World’s Fastest Growing Agencies by Adweek",
+        "category": "PRESS",
+        "date": "09.25.19"
+    },
+    {
+        "img": "assets/img/news3.jpg",
+        "headline": "THE WEBBY AWARDS SELECT BASIC® TO RETHINK THE FUTURE OF THEIR BRAND AND DIGITAL PLATFORM",
+        "category": "WORK",
+        "date": "12.13.19"
+    },
+    {
+        "img": "assets/img/Furrion-Partnership.jpg",
+        "headline": "BASIC® and Furrion partner to launch all new eCommerce website built for a D2C future",
+        "category": "WORK",
+        "date": "08.29.19"
+    } 
+]
