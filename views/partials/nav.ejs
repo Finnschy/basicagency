@@ -1,5 +1,10 @@
 <nav>
     <ul>
+        <a href="/">
+            <img id="navLogo"
+                src="<%= title === 'About'|| title === 'Thinking' ? 'assets/img/logo_pink.svg' : 'assets/img/logo.svg' %>"
+                alt=""> 
+        </a>
         <% navData.forEach(nav=> { %>
             <li>
                 <a href="<%= nav.url %>">
@@ -7,5 +12,8 @@
                 </a>
             </li>
             <% }) %>
+                <img id="navMenu"
+                    src="<%= title === 'About'|| title === 'Thinking' ? 'assets/img/menu_pink.svg' : 'assets/img/menu.svg' %>"
+                    alt="">
     </ul>
 </nav>

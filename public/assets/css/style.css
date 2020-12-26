@@ -32,11 +32,94 @@
     color: #000;
 }
 
-.darkBG {
-    background: #333;
-    color: #fff;
+body, .lightBG {
+    background: var(--main-bg);
 }
 
-.darkBG  a {
-    color: #fff;
+.darkBG {
+    background: #333;
 }
+
+.darkBG nav ul li a {
+    color: var(--rosa);
+}
+
+nav {
+    width: 95%;
+    margin: 2rem auto;
+}
+
+ul {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav ul li a {
+    text-transform: uppercase;
+}
+
+#navLogo{
+    width: 7rem;
+    margin-right: 7rem;
+}
+
+#navMenu {
+    width: 3rem;
+    margin-left: 10rem;
+}
+
+h1, .h2LikeH1 {
+    font-weight: 600;
+    font-size: 5.563rem;
+}
+
+h2 {
+    font-size: 2.563rem;
+}
+
+.boldHL {
+    font-weight: 600;
+}
+
+h3 {
+    font-size: 2.094rem;
+}
+
+h4 {
+    font-size: 1.688rem;
+}
+
+h5, figcaption  {
+    font-size: 1.406rem;
+}
+
+h6 {
+    font-size: 1.125rem; 
+}
+
+.small14pxP {
+    font-size: 0.938rem;
+}
+
+.small12pxP {
+    font-size: 0.75rem; 
+}
+
+.alignCenter {
+    text-align: center;
+}
+
+.alignRight {
+    text-align: right;
+}
+
+#slogan { 
+    font-size: 0.563rem;
+}
+
+main {
+    width: 95%;
+    margin: 0 auto;
+}
+ 
