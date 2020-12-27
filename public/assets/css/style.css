@@ -49,7 +49,7 @@ nav {
     margin: 2rem auto;
 }
 
-ul {
+nav ul {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -80,6 +80,10 @@ h2 {
 
 .regularHL {
     font-weight: 400;
+}
+
+.whiteHL {
+    color: #fff;
 }
 
 .boldHL {
@@ -131,7 +135,7 @@ h6 {
     margin: 0 auto;
 }
 
-.littleAbout, .darkSectFlex, .ftNewsFlex {
+.littleAbout, .darkSectFlex, .ftNewsFlex, .footerLowerThird  {
     display: flex;
     justify-content: space-between;
 }
@@ -211,7 +215,6 @@ h6 {
 }
 
 .ftNewsImg {
-
     width: 30vw;
     height: auto;
     margin-right: 1rem;
@@ -234,4 +237,84 @@ h6 {
 .arrow {
     align-self: flex-start;
     width: 3rem;
+}
+
+
+
+
+
+
+
+
+
+.footerFlexOne, .footerFlexTwo {
+    display: flex;
+    justify-content: space-between;
+    width: 95%;
+    margin: 0 auto;
+}
+
+.footerFlexOne {
+    margin-bottom: 7rem;
+}
+
+.footerFlexOne img{
+    align-self: flex-start;
+}
+
+.footerFlexOne div {
+    width: 50%;
+}
+
+#footerLogo {
+    width: 3rem;
+}
+
+.footerConnect {
+    text-decoration: underline #fff;
+}
+
+.footerConnect:hover {
+    text-decoration: underline wavy var(--rosa);
+}
+
+.footerFlexTwo {
+    margin-bottom: 13rem;
+}
+
+.footerForm {
+    width: 100%;
+}
+
+.footerInfos {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.footerForm h5, .footerInfos h5 {
+    padding-bottom: 2rem;
+}
+
+#email {
+    background: none;
+    border: none;
+    border-bottom: 1px solid #fff;
+    width: 98%;
+    color: #fff;
+    padding: .5rem;
+}
+
+#email:focus, #email:active {
+    outline: none;
+}
+
+
+.footerLowerThird {
+    padding: 2rem 2.75rem;
+    background: #232220;
+}
+
+.footerLowerThird p {
+    color: #4f4f4f;
 }
