@@ -1,3 +1,4 @@
+/* GENERAL STUFF */
 @font-face {
     font-family: "Scto";
     src: url("/assets/fonts/SctoGroteskA-Regular.woff2") format("woff2");
@@ -42,6 +43,14 @@ body, .lightBG {
 
 .darkBG nav ul li a {
     color: var(--rosa);
+}
+
+.navActive {
+    border-bottom: 2px solid #000;
+}
+
+.navActiveLight {
+    border-bottom: 2px solid var(--rosa);
 }
 
 nav {
@@ -126,13 +135,17 @@ h6 {
     font-size: 0.563rem;
 }
 
-.videoContainer video {
-    width: 100%;
-}
+/* GENERAL STUFF DONE */
 
-.headlineSect, .littleAbout, .ftEngage {
+/* INDEX/HOME STYLES */
+
+.headlineSect, .littleAbout, .ftEngage, .mainNewsSect {
     width: 95%;
     margin: 0 auto;
+}
+
+.videoContainer video {
+    width: 100%;
 }
 
 .littleAbout, .darkSectFlex, .ftNewsFlex, .footerLowerThird  {
@@ -209,9 +222,16 @@ h6 {
 }
 
 .ftNewsFlex {
-    border-top: 1px solid var(--rosa);
     padding-top: 1rem;
     margin-top: 5rem;
+}
+
+.newsFlexDark {
+    border-top: 1px solid #000;
+}
+
+.newsFlexLight {
+    border-top: 1px solid var(--rosa);
 }
 
 .ftNewsImg {
@@ -239,13 +259,31 @@ h6 {
     width: 3rem;
 }
 
+/* INDEX/HOME STYLES DONE */
 
+/* NEWS STYLES */
 
+.newsSect {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10rem;
+    margin-bottom: 10rem;
+}
 
+.newsSect h2 {
+    align-self: center;
+}
 
+.mainNewsSect {
+    margin-bottom: 10rem;
+}
 
+/* NEWS STYLES DONE */
 
-
+/* FOOTER STYLES */
+.footerMainSect {
+    padding-top: 5rem;
+}
 
 .footerFlexOne, .footerFlexTwo {
     display: flex;
@@ -312,9 +350,18 @@ h6 {
 
 .footerLowerThird {
     padding: 2rem 2.75rem;
+}
+
+.lowerThirdDark {
     background: #232220;
+}
+
+.lowerThirdLight {
+    background: #dadada;
 }
 
 .footerLowerThird p {
     color: #4f4f4f;
 }
+
+/* FOOTER STYLES DONE */

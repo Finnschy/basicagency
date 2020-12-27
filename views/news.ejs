@@ -1,7 +1,15 @@
 <%- include("./partials/head.ejs") %>
 <%- include("./partials/nav.ejs") %>
 <main>
-    <h1><%= title %></h1>
+    <section class="headlineSect newsSect">
+        <h1>NEWS</h1>
+        <h2 class="h2LikeH1">●</h2>
+    </section>
+
+    <section class="mainNewsSect">
+        <%- include("./partials/newsSection.ejs") %>
+    </section>
+    
 </main>
 <%- include("./partials/footer.ejs") %>
 

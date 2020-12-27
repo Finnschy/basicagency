@@ -7,7 +7,7 @@
         </a>
         <% navData.forEach(nav=> { %>
             <li>
-                <a href="<%= nav.url %>">
+                <a href="<%= nav.url %>" class="<%= title === nav.name ? 'navActive' : ''%> <%= nav.dark === 'yesAbout' && title === 'About' || nav.dark === 'yesThinking' && title === 'Thinking' ? 'navActiveLight' : '' %>">
                     <%= nav.name %>
                 </a>
             </li>

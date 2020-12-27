@@ -10,7 +10,7 @@ app.set("view engine", "ejs")
 
 navData.forEach(navi => {
     app.get(`${navi.url}`, (req, res) => {
-        res.render(`${navi.render}`, {title: `${navi.name}`, navData, littleNewsData})
+        res.render(`${navi.render}`, {title: `${navi.name}`, navData, littleNewsData, newsData})
     })
 })
 

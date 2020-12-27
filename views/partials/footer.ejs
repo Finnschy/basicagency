@@ -2,48 +2,48 @@
     class="<%= title === 'Home'|| title === 'Work' || title === 'News' || title === 'Contact'? 'darkBG' : 'lightBG' %>">
     <section class="footerMainSect">
         <div class="footerFlexOne">
-            <img id="footerLogo" src="assets/img/footer-logo.svg" alt="">
+            <img id="footerLogo" src="<%= title === 'About'|| title === 'Thinking' ? 'assets/img/footer-logo-bg-white.svg' : 'assets/img/footer-logo.svg' %>" alt="">
             <div>
-                <h3 class="whiteHL">We collaborate with ambitious <br> brands and people. <a href="#"
-                        class="whiteHL footerConnect">Let’s connect</a> :)</h3>
+                <h3 class="<%= title === 'Home'|| title === 'Work' || title === 'News' || title === 'Contact'? 'whiteHL' : '' %>">We collaborate with ambitious <br> brands and people. <a href="#"
+                        class="<%= title === 'Home'|| title === 'Work' || title === 'News' || title === 'Contact'? 'whiteHL footerConnect' : 'footerConnect' %>">Let’s connect</a> :)</h3>
             </div>
         </div>
 
         <div class="footerFlexTwo">
             <div class="footerForm">
-                <h5 class="whiteHL regularHL">●STAY IN THE KNOW</h5>
+                <h5 class="<%= title === 'Home'|| title === 'Work' || title === 'News' || title === 'Contact'? 'whiteHL regularHL' : 'regularHL' %>">●STAY IN THE KNOW</h5>
                 <form action="">
-                    <label for="email" class="whiteHL">Email Address</label> <br>
+                    <label for="email" class="<%= title === 'Home'|| title === 'Work' || title === 'News' || title === 'Contact'? 'whiteHL' : '' %>">Email Address</label> <br>
                     <input type="email" name="email" id="email">
                 </form>
             </div>
 
             <div class="footerInfos">
                 <div class="socials">
-                    <h5 class="whiteHL regularHL">●SOCIAL</h5>
+                    <h5 class="<%= title === 'Home'|| title === 'Work' || title === 'News' || title === 'Contact'? 'whiteHL regularHL' : 'regularHL' %>">●SOCIAL</h5>
                     <ul>
-                        <li class="whiteHL">Instagram</li>
-                        <li class="whiteHL">Twitter</li>
-                        <li class="whiteHL">LinkedIn</li>
-                        <li class="whiteHL">Facebook</li>
+                        <li class="<%= title === 'Home'|| title === 'Work' || title === 'News' || title === 'Contact'? 'whiteHL' : '' %>">Instagram</li>
+                        <li class="<%= title === 'Home'|| title === 'Work' || title === 'News' || title === 'Contact'? 'whiteHL' : '' %>">Twitter</li>
+                        <li class="<%= title === 'Home'|| title === 'Work' || title === 'News' || title === 'Contact'? 'whiteHL' : '' %>">LinkedIn</li>
+                        <li class="<%= title === 'Home'|| title === 'Work' || title === 'News' || title === 'Contact'? 'whiteHL' : '' %>">Facebook</li>
                     </ul>
                 </div>
                 <div class="initiatives">
-                    <h5 class="whiteHL regularHL">●INITIATIVES</h5>
+                    <h5 class="<%= title === 'Home'|| title === 'Work' || title === 'News' || title === 'Contact'? 'whiteHL regularHL' : 'regularHL' %>">●INITIATIVES</h5>
                     <ul>
-                        <li class="whiteHL">Crafted</li>
-                        <li class="whiteHL">Culture Manual</li>
-                        <li class="whiteHL">Applied</li>
-                        <li class="whiteHL">Brandbeats</li>
-                        <li class="whiteHL">Moves</li>
+                        <li class="<%= title === 'Home'|| title === 'Work' || title === 'News' || title === 'Contact'? 'whiteHL' : '' %>">Crafted</li>
+                        <li class="<%= title === 'Home'|| title === 'Work' || title === 'News' || title === 'Contact'? 'whiteHL' : '' %>">Culture Manual</li>
+                        <li class="<%= title === 'Home'|| title === 'Work' || title === 'News' || title === 'Contact'? 'whiteHL' : '' %>">Applied</li>
+                        <li class="<%= title === 'Home'|| title === 'Work' || title === 'News' || title === 'Contact'? 'whiteHL' : '' %>">Brandbeats</li>
+                        <li class="<%= title === 'Home'|| title === 'Work' || title === 'News' || title === 'Contact'? 'whiteHL' : '' %>">Moves</li>
                     </ul>
                 </div>
                 <div class="offices">
-                    <h5 class="whiteHL regularHL">●OFFICES</h5>
+                    <h5 class="<%= title === 'Home'|| title === 'Work' || title === 'News' || title === 'Contact'? 'whiteHL regularHL' : 'regularHL' %>">●OFFICES</h5>
                     <ul>
-                        <li class="whiteHL">San Diego – CA</li>
-                        <li class="whiteHL">Bay Area – CA</li>
-                        <li class="whiteHL">St. Louis – MO</li>
+                        <li class="<%= title === 'Home'|| title === 'Work' || title === 'News' || title === 'Contact'? 'whiteHL' : '' %>">San Diego – CA</li>
+                        <li class="<%= title === 'Home'|| title === 'Work' || title === 'News' || title === 'Contact'? 'whiteHL' : '' %>">Bay Area – CA</li>
+                        <li class="<%= title === 'Home'|| title === 'Work' || title === 'News' || title === 'Contact'? 'whiteHL' : '' %>">St. Louis – MO</li>
                     </ul>
                 </div>
             </div>
@@ -52,7 +52,7 @@
     </section>
 
 
-    <section class="footerLowerThird">
+    <section class="<%= title === 'About'|| title === 'Thinking' ? 'footerLowerThird lowerThirdLight' : 'footerLowerThird lowerThirdDark' %>">
         <p class="small12pxP">BASIC®, INC 10 - 20©</p>
         <p class="small12pxP">EASY TO UNDERSTAND, IMPOSSIBLE TO IGNORE.™</p>
         <p class="small12pxP">TERMS, PRIVACY POLICY</p>

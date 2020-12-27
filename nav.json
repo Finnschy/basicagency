@@ -2,31 +2,37 @@
     {
         "name": "Home",
         "url": "/",
-        "render": "index"
+        "render": "index",
+        "dark": "no"
     },
     {
         "name": "Work",
         "url": "/work",
-        "render": "work"
+        "render": "work",
+        "dark": "no"
     },
     {
         "name": "About",
         "url": "/about",
-        "render": "about"
+        "render": "about",
+        "dark": "yesAbout"
     },
     {
         "name": "News",
         "url": "/news",
-        "render": "news"
+        "render": "news",
+        "dark": "no"
     },
     {
         "name": "Thinking",
         "url": "/thinking",
-        "render": "thinking"
+        "render": "thinking",
+        "dark": "yesThinking"
     },
     {
         "name": "Contact",
         "url": "/contact",
-        "render": "contact"
+        "render": "contact",
+        "dark": "no"
     }
 ]
