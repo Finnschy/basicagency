@@ -316,6 +316,10 @@ figcaption {
     padding: 1rem 0;
 }
 
+.workMainSect:last-of-type {
+    margin-bottom: 5rem;
+}
+
 .workMainSect , .workImgContent{
     display: flex;
 }
