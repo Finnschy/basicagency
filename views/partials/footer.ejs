@@ -14,7 +14,7 @@
                 <h5 class="<%= title === 'Home'|| title === 'Work' || title === 'News' || title === 'Contact'? 'whiteHL regularHL' : 'regularHL' %>">●STAY IN THE KNOW</h5>
                 <form action="">
                     <label for="email" class="<%= title === 'Home'|| title === 'Work' || title === 'News' || title === 'Contact'? 'whiteHL' : '' %>">Email Address</label> <br>
-                    <input type="email" name="email" id="email">
+                    <input type="email" name="email" id="<%= title === 'About' || title === 'Thinking' ? 'emailDark' : 'email' %>">
                 </form>
             </div>
 

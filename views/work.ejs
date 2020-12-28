@@ -1,7 +1,16 @@
 <%- include("./partials/head.ejs") %>
-<%- include("./partials/nav.ejs") %>
-<main>
-    <h1><%= title %></h1>
-</main>
-<%- include("./partials/footer.ejs") %>
+    <%- include("./partials/nav.ejs") %>
+        <main>
+            <section class="headlineSect">
+                <h1 class="workHL">EASY TO <br> UNDERSTAND. <br> ●IMPOSSIBLE <br> TO IGNORE.</h1>
+                <div class="workIntroFlex">
+                    <p></p>
+                    <p class="workIntro">The work we create lives at the intersection of clarity and surprise and positions brands in culture through shared values and ideals.</p>
+                </div>
+            </section>
 
+            
+            <%- include("./partials/workSection.ejs") %>
+            
+        </main>
+        <%- include("./partials/footer.ejs") %>

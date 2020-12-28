@@ -1,7 +1,28 @@
 <%- include("./partials/head.ejs") %>
-<%- include("./partials/nav.ejs") %>
-<main>
-    <h1><%= title %></h1>
-</main>
-<%- include("./partials/footer.ejs") %>
+    <%- include("./partials/nav.ejs") %>
+        <main>
+            <section class="headlineSect hlSectSubpage">
+                <h1 class="rosaText">THINKING</h1>
+                <h2 class="h2LikeH1 rosaText">●</h2>
+            </section>
 
+            <section class="thinkingCopyHL">
+                <div class="thinkingBrandbeats">
+                    <h4 class="rosaText">BRANDBEATS®</h4>
+                    <p class="rosaText">Brandbeats® is our agency podcast garnering over 45,000+ listens per episode where we discuss
+                        industry happenings for 30 minutes as well as provide ten tracks of curated music. Our
+                        conversations are a candid exploration of design topics, branding trends, and experiences we’re
+                        noticing in culture.</p>
+                </div>
+
+                <div class="thinkingApplied"> 
+                    <h4 class="rosaText">APPLIED®</h4>
+                    <p class="rosaText">Applied® is our panel series and thought-leadership platform where we share perspectives and tactics related to strategy, design, and technology. The content is raw and driven by honest observations and guided questions that use culture to explain why trends exist and how they impact business and tech.</p>
+                </div>
+            </section>
+
+            <section class="mainThinkingSect">
+                <%- include("./partials/thinkingSection.ejs") %>
+            </section>
+        </main>
+        <%- include("./partials/footer.ejs") %>

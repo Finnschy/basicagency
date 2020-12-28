@@ -41,7 +41,7 @@ body, .lightBG {
     background: var(--grey);
 }
 
-.darkBG nav ul li a {
+.rosaText, .darkBG nav ul li a {
     color: var(--rosa);
 }
 
@@ -115,6 +115,11 @@ h6 {
     font-size: 1.125rem; 
 }
 
+figcaption {
+    font-size: 1.406rem;
+    margin: 1.5rem 0;
+}
+
 .small14pxP {
     font-size: 0.938rem;
 }
@@ -139,16 +144,27 @@ h6 {
 
 /* INDEX/HOME STYLES */
 
-.headlineSect, .littleAbout, .ftEngage, .mainNewsSect {
+.indexHL, .workHL {
+    margin-top: 5rem;
+}
+
+.headlineSect, .littleAbout, .ftEngage, .mainNewsSect, .thinkingCopy, .thinkingCopyHL, .mainThinkingSect , .workMainSect{
     width: 95%;
     margin: 0 auto;
+}
+
+.hlSectSubpage {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10rem;
+    margin-bottom: 10rem;
 }
 
 .videoContainer video {
     width: 100%;
 }
 
-.littleAbout, .darkSectFlex, .ftNewsFlex, .footerLowerThird  {
+.littleAbout, .darkSectFlex, .ftNewsFlex, .footerLowerThird, .thinkingFlex  {
     display: flex;
     justify-content: space-between;
 }
@@ -205,10 +221,6 @@ h6 {
     padding: 6rem 2.75rem;
 }
 
-.darkSect h2, .darkSect p, .darkSect span, .darkSect a {
-    color: var(--rosa);
-}
-
 .h2LikeH1{
     line-height: 5rem;
 }
@@ -221,7 +233,7 @@ h6 {
     margin-top: 10rem;
 }
 
-.ftNewsFlex {
+.ftNewsFlex, .thinkingFlex {
     padding-top: 1rem;
     margin-top: 5rem;
 }
@@ -230,11 +242,11 @@ h6 {
     border-top: 1px solid #000;
 }
 
-.newsFlexLight {
+.newsFlexLight, .thinkingFlexLight {
     border-top: 1px solid var(--rosa);
 }
 
-.ftNewsImg {
+.ftNewsImg , .thinkingImg {
     width: 30vw;
     height: auto;
     margin-right: 1rem;
@@ -261,24 +273,105 @@ h6 {
 
 /* INDEX/HOME STYLES DONE */
 
-/* NEWS STYLES */
+/* WORK STYLES */
 
-.newsSect {
+
+.workHL, .workIntro {
+    margin-bottom: 5rem;
+}
+
+.workIntroFlex {
     display: flex;
     justify-content: space-between;
-    margin-top: 10rem;
-    margin-bottom: 10rem;
 }
+
+.workIntro {
+    width: 20%;
+}
+
+.workHLContent {
+    border-right: 1px solid #000;
+}
+
+.workContentHL {
+    margin-top: 15rem;
+}
+
+.workContentCopy {
+    width: 90%;
+    margin: 2.5rem 0;
+}
+
+.workFigureOne img:nth-of-type(1), .workFigureOne video {
+    margin-right: 1rem;
+}
+
+.figureDescription {
+    width: 40%;
+    padding-bottom: 2rem;
+}
+
+.workMainSect {
+    border-top: 1px solid #000;
+    padding: 1rem 0;
+}
+
+.workMainSect , .workImgContent{
+    display: flex;
+}
+
+.workImgContent {
+    justify-content: space-between;
+    margin-left: 1rem;
+}
+
+/* WORK STYLES DONE */
+
+/* NEWS STYLES */
 
 .newsSect h2 {
     align-self: center;
 }
 
-.mainNewsSect {
+.mainNewsSect, .mainThinkingSect {
     margin-bottom: 10rem;
 }
 
 /* NEWS STYLES DONE */
+
+/* THINKING STYLES */
+
+.thinkingCopyHL {
+    display: flex;
+}
+
+.thinkingBrandbeats, .thinkingApplied {
+    width: 20%;
+    margin-bottom: 5rem;
+}
+
+.thinkingBrandbeats h4, .thinkingApplied h4 {
+    margin-bottom: 1.5rem;
+}
+
+.thinkingBrandbeats p, .thinkingApplied p {
+    line-height: 1.5rem;
+}
+
+.thinkingBrandbeats {
+    margin-right: 5rem;
+}
+
+.thinkingCopy {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: stretch;
+}
+
+
+/* THINKING STYLES DONE */
+
 
 /* FOOTER STYLES */
 .footerMainSect {
@@ -338,6 +431,15 @@ h6 {
     background: none;
     border: none;
     border-bottom: 1px solid #fff;
+    width: 98%;
+    color: #fff;
+    padding: .5rem;
+}
+
+#emailDark {
+    background: none;
+    border: none;
+    border-bottom: 1px solid #000;
     width: 98%;
     color: #fff;
     padding: .5rem;
