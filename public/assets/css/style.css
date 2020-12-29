@@ -136,10 +136,6 @@ figcaption {
     text-align: right;
 }
 
-#slogan { 
-    font-size: 0.563rem;
-}
-
 /* GENERAL STUFF DONE */
 
 /* INDEX/HOME STYLES */
@@ -153,7 +149,7 @@ figcaption {
     margin: 0 auto;
 }
 
-.hlSectSubpage {
+.margin-page {
     display: flex;
     justify-content: space-between;
     margin-top: 10rem;
@@ -373,8 +369,51 @@ figcaption {
     align-items: stretch;
 }
 
-
 /* THINKING STYLES DONE */
+
+/* CONTACT STYLES */
+
+.contactFlex {
+    margin-top: 5rem;
+    margin-bottom: 15rem;
+}
+
+.contactFlex, .contactMails {
+    display: flex;
+}
+
+.contactMainContent {
+    margin: 10rem 0 0 1rem;
+}
+
+.contactMails {
+    margin-top: 10rem;
+}
+
+.sloganBox {
+    margin-top: 2rem;
+}
+
+.contactSlogan { 
+    font-size: 0.563rem;
+}
+
+.contactGrid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 3rem;
+    margin-left: 15rem;
+}
+
+.contactGrid h5 {
+    margin-bottom: 1.5rem;
+}
+
+.contactGrid a {
+    border-bottom: 1px solid #000;
+}
+
+/* CONTACT STYLES DONE */
 
 
 /* FOOTER STYLES */
