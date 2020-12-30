@@ -1,4 +1,5 @@
 /* GENERAL STUFF */
+
 @font-face {
     font-family: "Scto";
     src: url("/assets/fonts/SctoGroteskA-Regular.woff2") format("woff2");
@@ -19,11 +20,11 @@
 
 :root {
     --rosa: #f9cdcd;
-    --grey:  #252422;
+    --grey: #252422;
     --main-bg: #f4f4f4;
 }
 
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -31,6 +32,11 @@
     list-style: none;
     font-family: "Scto";
     color: #000;
+}
+
+.width95 {
+    width: 95%;
+    margin: 0 auto;
 }
 
 body, .lightBG {
@@ -41,7 +47,7 @@ body, .lightBG {
     background: var(--grey);
 }
 
-.rosaText, .darkBG nav ul li a {
+.rosaText, .darkBG nav ul li a, div.mainGridContent div > h4, div.mainGridContent div > h2, div.mainGridContent div > p, div.mainGrid div p, div.mainGridContent div > ul li {
     color: var(--rosa);
 }
 
@@ -68,7 +74,7 @@ nav ul li a {
     text-transform: uppercase;
 }
 
-#navLogo{
+#navLogo {
     width: 7rem;
     margin-right: 7rem;
 }
@@ -78,6 +84,10 @@ nav ul li a {
     margin-left: 10rem;
 }
 
+nav ul li:nth-of-type(1) a {
+    display: none;
+}
+
 h1, .h2LikeH1 {
     font-weight: 600;
     font-size: 5.563rem;
@@ -85,6 +95,10 @@ h1, .h2LikeH1 {
 
 h2 {
     font-size: 2.563rem;
+}
+
+.biggerH2 {
+    font-size: 4.688rem;
 }
 
 .regularHL {
@@ -107,12 +121,12 @@ h4 {
     font-size: 1.688rem;
 }
 
-h5, figcaption  {
+h5, figcaption {
     font-size: 1.406rem;
 }
 
 h6 {
-    font-size: 1.125rem; 
+    font-size: 1.125rem;
 }
 
 figcaption {
@@ -125,7 +139,11 @@ figcaption {
 }
 
 .small12pxP {
-    font-size: 0.75rem; 
+    font-size: 0.75rem;
+}
+
+.big35pxP {
+    font-size: 2.188rem;
 }
 
 .alignCenter {
@@ -144,7 +162,7 @@ figcaption {
     margin-top: 5rem;
 }
 
-.headlineSect, .littleAbout, .ftEngage, .mainNewsSect, .thinkingCopy, .thinkingCopyHL, .mainThinkingSect , .workMainSect, .contactPreFooter{
+.headlineSect, .littleAbout, .ftEngage{
     width: 95%;
     margin: 0 auto;
 }
@@ -160,7 +178,7 @@ figcaption {
     width: 100%;
 }
 
-.littleAbout, .darkSectFlex, .ftNewsFlex, .footerLowerThird, .thinkingFlex  {
+.littleAbout, .darkSectFlex, .ftNewsFlex, .footerLowerThird, .thinkingFlex {
     display: flex;
     justify-content: space-between;
 }
@@ -190,7 +208,7 @@ figcaption {
     margin-top: 4rem;
 }
 
-.aBtn , .aBtnRosa {
+.aBtn, .aBtnRosa {
     padding: .5rem 2.7rem;
     border-radius: 2rem;
 }
@@ -217,7 +235,7 @@ figcaption {
     padding: 6rem 2.75rem;
 }
 
-.h2LikeH1{
+.h2LikeH1 {
     line-height: 5rem;
 }
 
@@ -242,7 +260,7 @@ figcaption {
     border-top: 1px solid var(--rosa);
 }
 
-.ftNewsImg , .thinkingImg {
+.ftNewsImg, .thinkingImg {
     width: 30vw;
     height: auto;
     margin-right: 1rem;
@@ -270,7 +288,6 @@ figcaption {
 /* INDEX/HOME STYLES DONE */
 
 /* WORK STYLES */
-
 
 .workHL, .workIntro {
     margin-bottom: 5rem;
@@ -316,7 +333,7 @@ figcaption {
     margin-bottom: 5rem;
 }
 
-.workMainSect , .workImgContent{
+.workMainSect, .workImgContent {
     display: flex;
 }
 
@@ -327,7 +344,103 @@ figcaption {
 
 /* WORK STYLES DONE */
 
+/* ABOUT STYLES */
+
+.aboutHLGrid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    border-bottom: 1px solid var(--rosa);
+    margin-bottom: 5rem;
+}
+
+.aboutHLGridItem1 {
+    grid-area: 1 / 1 / 2 / 2;
+}
+
+.aboutHLGridItem2 {
+    grid-area: 2 / 1 / 3 / 2; 
+}
+
+.aboutHLGridItem3 {
+    grid-area: 3 / 1 / 4 / 2;
+}
+
+.aboutHLGridItem4 {
+    grid-area: 3 / 2 / 4 / 3; 
+}
+
+.aboutHLGridItem5 {
+    grid-area: 4 / 2 / 5 / 3;
+}
+
+.aboutHLGridItem6 {
+    grid-area: 5 / 2 / 6 / 3;
+}
+
+.aboutHLGridItem7 {
+    grid-area: 6 / 2 / 7 / 3;
+}
+
+.aboutIntroHL2 {
+    padding-bottom: 1.5rem;
+}
+
+.aboutIntroCopy {
+    padding-bottom: 5rem;
+}
+
+.bigLogo {
+    border-top: 1px solid var(--rosa);
+    padding: 1rem 0;
+}
+
+#aboutLogo {
+    width: 50rem;
+}
+
+div.mainGridContent div > ul li {
+    line-height: 2rem;
+}
+
+div.mainGridContent div > ul {
+    margin-bottom: 1.5rem;
+}
+
+.biggerH2 + p {
+    width: 45%;
+    margin-bottom: 1.5rem;
+}
+
+.mainGridAwards div > h2 {
+    margin-bottom: 4rem;
+}
+
+.aboutAwards {
+    margin-bottom: 20rem;
+}
+
+.aboutAwards h2, .aboutAwards p{
+    color: var(--rosa);
+    opacity: .8;
+}
+
+.aboutAwards div {
+    display: flex;
+}
+
+.aboutAwards p {
+    margin-top: .95rem;
+    margin-left: 1rem;
+}
+
+
+/* ABOUT STYLES DONE */
+
 /* NEWS STYLES */
+
+.marginHL {
+    margin: 5rem 0;
+}
 
 .newsSect h2 {
     align-self: center;
@@ -341,8 +454,16 @@ figcaption {
 
 /* THINKING STYLES */
 
-.thinkingCopyHL {
+.thinkingCopyHL, .hlSectSubpage {
     display: flex;
+}
+
+.hlSectSubpage {
+    justify-content: space-between;
+}
+
+.hlSectSubpage h2 {
+    align-self: center;
 }
 
 .thinkingBrandbeats, .thinkingApplied {
@@ -394,7 +515,7 @@ figcaption {
     margin-top: 2rem;
 }
 
-.contactSlogan { 
+.contactSlogan {
     font-size: 0.563rem;
 }
 
@@ -413,11 +534,15 @@ figcaption {
     border-bottom: 1px solid #000;
 }
 
-.contactMainGrid {
+.mainGrid {
     border-top: 1px solid #000;
 }
 
-.contactMainGrid, .contactMainGridOffices, .contactPreFooter {
+.mainGridRosa {
+    border-top: 1px solid var(--rosa);
+}
+
+.mainGrid, .mainGridContent, .contactPreFooter, .mainGridAwards {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     padding-top: 1rem;
@@ -453,7 +578,7 @@ figcaption {
 
 .marginBottom {
     margin-bottom: 2rem;
-} 
+}
 
 .borderBottom h5 {
     margin-left: 3rem;
@@ -464,7 +589,7 @@ figcaption {
     margin-right: 1rem;
 }
 
-.contactPreFooter a{
+.contactPreFooter a {
     text-decoration: underline #000;
     line-height: 2rem;
 }
@@ -475,8 +600,8 @@ figcaption {
 
 /* CONTACT STYLES DONE */
 
-
 /* FOOTER STYLES */
+
 .footerMainSect {
     padding-top: 5rem;
 }
@@ -492,7 +617,7 @@ figcaption {
     margin-bottom: 7rem;
 }
 
-.footerFlexOne img{
+.footerFlexOne img {
     align-self: flex-start;
 }
 
@@ -548,10 +673,9 @@ figcaption {
     padding: .5rem;
 }
 
-#email:focus, #email:active, #emailDark:focus, #emailDark:active{
+#email:focus, #email:active, #emailDark:focus, #emailDark:active {
     outline: none;
 }
-
 
 .footerLowerThird {
     padding: 2rem 2.75rem;
