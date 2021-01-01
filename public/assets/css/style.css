@@ -381,6 +381,57 @@ figcaption {
     grid-area: 6 / 2 / 7 / 3;
 }
 
+.overlappingImg {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 15rem 0;
+}
+
+.overlappingGridContainer {
+    display: grid;
+    grid-template-columns: 1.2fr 1fr 2.1fr 0.5fr 1.1fr 1fr 2.1fr;
+    /* grid-template-rows: 0.8fr 1.6fr 1.2fr 2.3fr 0.9fr 1.5fr 1.3fr; */
+}
+
+.img1 img, .img4 img, .img2 img, .img3 img {
+    position: relative;
+}
+
+.img1 img {
+    z-index: 1;
+}
+
+.img2 img {
+    z-index: 2;
+}
+
+.img1 { 
+    grid-area: 1 / 1 / 5 / 5; 
+}
+
+.img4 { 
+    grid-area: 4 / 4 / 8 / 8; 
+}
+
+.img2 { 
+    grid-area: 3 / 2 / 7 / 6; 
+}
+
+.img3 { 
+    grid-area: 2 / 3 / 6 / 7; 
+    display: flex;
+}
+
+.img3 img {
+    margin-right: 1rem;
+}
+
+.overlappingGridContainer img:hover {
+    z-index: 999;
+}
+
+
 .aboutIntroHL2 {
     padding-bottom: 1.5rem;
 }
@@ -432,7 +483,6 @@ div.mainGridContent div > ul {
     margin-top: .95rem;
     margin-left: 1rem;
 }
-
 
 /* ABOUT STYLES DONE */
 
