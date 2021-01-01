@@ -514,14 +514,12 @@ div.mainGridContent div > ul {
 }
 
 .aboutAwardsFlex{
-    border: 1px solid red;
     display: flex;
 }
 
 .aboutAwardsFlex p {
     margin-top: .95rem;
     margin-left: 1rem;
-    border: 1px solid blue;
 }
 
 .imgHoverDisplay {

@@ -301,8 +301,49 @@
 
                 <div>
                     <img class="imgHoverDisplay" id="img1" src="assets/img/hover-1.jpg" alt="">
+                    <img class="imgHoverDisplay" id="img2" src="assets/img/hover-2.jpg" alt="">
+                    <img class="imgHoverDisplay" id="img3" src="assets/img/hover-3.jpg" alt="">
+                    <img class="imgHoverDisplay" id="img4" src="assets/img/hover-4.jpg" alt="">
+                    <img class="imgHoverDisplay" id="img5" src="assets/img/hover-5.jpg" alt="">
+                    <img class="imgHoverDisplay" id="img6" src="assets/img/hover-6.jpg" alt="">
                 </div>
             </section>
 
         </main>
         <%- include("./partials/footer.ejs") %>
+
+            <script>
+                let hl1 = document.getElementById("hl1")
+                let hl2 = document.getElementById("hl2")
+                let hl3 = document.getElementById("hl3")
+                let hl4 = document.getElementById("hl4")
+                let hl5 = document.getElementById("hl5")
+                let hl6 = document.getElementById("hl6")
+
+                let img1 = document.getElementById("img1")
+                let img2 = document.getElementById("img2")
+                let img3 = document.getElementById("img3")
+                let img4 = document.getElementById("img4")
+                let img5 = document.getElementById("img5")
+                let img6 = document.getElementById("img6")
+
+
+                hl1.addEventListener("mouseover", () => img1.classList.remove("imgHoverDisplay"))
+                hl1.addEventListener("mouseleave", () => img1.classList.add("imgHoverDisplay"))
+
+                hl2.addEventListener("mouseover", () => img2.classList.remove("imgHoverDisplay"))
+                hl2.addEventListener("mouseleave", () => img2.classList.add("imgHoverDisplay"))
+
+                hl3.addEventListener("mouseover", () => img3.classList.remove("imgHoverDisplay"))
+                hl3.addEventListener("mouseleave", () => img3.classList.add("imgHoverDisplay"))
+
+                hl4.addEventListener("mouseover", () => img4.classList.remove("imgHoverDisplay"))
+                hl4.addEventListener("mouseleave", () => img4.classList.add("imgHoverDisplay"))
+
+                hl5.addEventListener("mouseover", () => img5.classList.remove("imgHoverDisplay"))
+                hl5.addEventListener("mouseleave", () => img5.classList.add("imgHoverDisplay"))
+
+                hl6.addEventListener("mouseover", () => img6.classList.remove("imgHoverDisplay"))
+                hl6.addEventListener("mouseleave", () => img6.classList.add("imgHoverDisplay"))
+
+            </script>
