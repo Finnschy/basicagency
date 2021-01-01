@@ -162,9 +162,44 @@ figcaption {
     margin-top: 5rem;
 }
 
-.headlineSect, .littleAbout, .ftEngage{
+.headlineSect, .littleAbout, .ftEngagements{
     width: 95%;
     margin: 0 auto;
+}
+
+.ftEngagements {
+    margin-bottom: 10rem;
+}
+
+.ftEngageGridContainer {
+    width: 95%;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: nowrap;
+    margin-bottom: 5rem;
+    overflow-x: auto;
+}
+
+.ftEngageGridContainer::-webkit-scrollbar {
+    display: none;
+  }
+
+.ftEngageGridContainer img {
+    height: 3rem;
+    padding-right: 20rem;
+}
+
+.ftEngageGridContainer div hr:nth-of-type(1) {
+    width: 2rem;
+    margin: .5rem 0 3rem 0;
+}
+
+.ftEngageGridContainer div hr:nth-of-type(2) {
+    margin: 1rem 0 .5rem 0;
+}
+
+.ftEngageGridContainer div {
+    margin-right: 10rem;
 }
 
 .margin-page {
@@ -386,6 +421,7 @@ figcaption {
     justify-content: space-between;
     align-items: center;
     margin: 15rem 0;
+
 }
 
 .overlappingGridContainer {
@@ -467,6 +503,8 @@ div.mainGridContent div > ul {
 }
 
 .aboutAwards {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
     margin-bottom: 20rem;
 }
 
@@ -475,13 +513,19 @@ div.mainGridContent div > ul {
     opacity: .8;
 }
 
-.aboutAwards div {
+.aboutAwardsFlex{
+    border: 1px solid red;
     display: flex;
 }
 
-.aboutAwards p {
+.aboutAwardsFlex p {
     margin-top: .95rem;
     margin-left: 1rem;
+    border: 1px solid blue;
+}
+
+.imgHoverDisplay {
+    display: none;
 }
 
 /* ABOUT STYLES DONE */
