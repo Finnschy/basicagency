@@ -47,7 +47,7 @@ body, .lightBG {
     background: var(--grey);
 }
 
-.rosaText, .darkBG nav ul li a, div.mainGridContent div > h4, div.mainGridContent div > h2, div.mainGridContent div > p, div.mainGrid div p, div.mainGridContent div > ul li {
+.rosaText, .darkBG nav ul li a, .aboutAwards h2, .aboutAwards p, div.gridAbout div > h4, div.gridAbout div > h2, div.gridAbout div > p, div.gridAbout div p, div.gridAbout div > ul li {
     color: var(--rosa);
 }
 
@@ -155,6 +155,128 @@ figcaption {
 }
 
 /* GENERAL STUFF DONE */
+
+/* DOTS MODAL STYLES */
+
+#dotsModal {
+    height: 100vh;
+    background: var(--grey);
+}
+
+.modalContainer {
+    width: 95%;
+    margin: 0 auto;
+}
+
+.modalDisplay {
+    display: none;
+}
+
+.modalMainContent {
+    display: flex;
+    flex-wrap: nowrap;
+    overflow-x: auto;
+}
+
+.modalMainContent div:nth-of-type(1) + p {
+    margin-bottom: 2rem;
+}
+
+.modalIntro {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 2rem;
+    margin-bottom: 2rem;
+}
+
+.modalBox {
+    border-left: 1px solid var(--rosa);
+    padding-left: 2rem;
+    margin-right: 2rem;
+    margin-left: 1rem;
+    height: 65vh;
+}   
+
+.modalBox h6 {
+    text-transform: uppercase;
+    margin: 1rem 0;
+}
+
+.modalBox p {
+    margin-bottom: 1.2rem;
+}
+
+.modalBox p:nth-of-type(2) {
+    /* display: none; */
+    opacity: 0;
+    height: 0;
+    overflow: hidden;
+    transition: opacity 1s ease-in-out;
+}
+
+.modalBox a {
+    display: inline-block;
+    margin-bottom: 1rem;
+}
+
+.modalImgContainer {
+    width: 25vw;
+    height: 50vh;
+    transition: height 1s ease-in-out;
+}
+
+.modalImg1 {
+    background: url(/assets/img/selected-work1.jpg) center / cover no-repeat;
+}
+
+.modalImg2 {
+    background: url(/assets/img/selected-work2.jpg) center / cover no-repeat;
+}
+
+.modalImg3 {
+    background: url(/assets/img/selected-work3.jpg) center / cover 
+    no-repeat;
+}
+
+.modalImg4 {
+    background: url(/assets/img/selected-work4.jpg) center / cover no-repeat;
+}
+
+.modalImg5 {
+    background: url(/assets/img/selected-work5.jpg) center / cover no-repeat;
+}
+
+.modalImgContainer:hover {
+    height: 25vh;
+}
+
+.modalImgContainer:hover ~ p:nth-of-type(2) {
+    /* display: block; */
+    opacity: 1;
+    height: auto;
+    transition: opacity 1s ease-in-out;
+}
+
+.imgContainer {
+    border: 1px solid #fff;
+    border-radius: 2rem;
+    display: flex;
+    justify-content: center;
+    height: 2rem;
+    width: 2rem;
+}
+
+#closeModal {
+    width: 1rem;
+}
+
+.modalNo {
+    margin-top: 1rem;
+    margin-left: .5rem;
+}
+
+/* DOTS MODAL STYLES DONE */
+
 
 /* INDEX/HOME STYLES */
 
@@ -509,7 +631,6 @@ div.mainGridContent div > ul {
 }
 
 .aboutAwards h2, .aboutAwards p{
-    color: var(--rosa);
     opacity: .8;
 }
 

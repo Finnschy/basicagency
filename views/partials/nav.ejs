@@ -1,22 +1,37 @@
-<nav>
-    <ul>
-        <a href="/">
-            <img id="navLogo"
-                src="<%= title === 'About'|| title === 'Thinking' ? 'assets/img/logo_pink.svg' : 'assets/img/logo.svg' %>"
-                alt=""> 
-        </a>
-        <% navData.forEach(nav=> { %>
-            <li>
-                <a href="<%= nav.url %>" class="<%= title === nav.name ? 'navActive' : ''%> <%= nav.dark === 'yesAbout' && title === 'About' || nav.dark === 'yesThinking' && title === 'Thinking' ? 'navActiveLight' : '' %>">
-                    <%= nav.name %>
-                </a>
-            </li>
-            <% }) %>
-                <img id="navMenu"
-                    src="<%= title === 'About'|| title === 'Thinking' ? 'assets/img/menu_pink.svg' : 'assets/img/menu.svg' %>" alt="">
-    </ul>
-</nav>
-<script>
-let navDots = document.querySelector("#navMenu")
-navDots.addEventListener("click", () => console.log("test"))
-</script>
+<%- include("./navDotsModal.ejs") %>
+
+    <nav>
+        <ul>
+            <a href="/">
+                <img id="navLogo"
+                    src="<%= title === 'About'|| title === 'Thinking' ? 'assets/img/logo_pink.svg' : 'assets/img/logo.svg' %>"
+                    alt="">
+            </a>
+            <% navData.forEach(nav=> { %>
+                <li>
+                    <a href="<%= nav.url %>"
+                        class="<%= title === nav.name ? 'navActive' : ''%> <%= nav.dark === 'yesAbout' && title === 'About' || nav.dark === 'yesThinking' && title === 'Thinking' ? 'navActiveLight' : '' %>">
+                        <%= nav.name %>
+                    </a>
+                </li>
+                <% }) %>
+                    <img id="navMenu"
+                        src="<%= title === 'About'|| title === 'Thinking' ? 'assets/img/menu_pink.svg' : 'assets/img/menu.svg' %>"
+                        alt="">
+        </ul>
+    </nav>
+
+
+
+
+
+    <script>
+        let navDots = document.querySelector("#navMenu")
+        let closeModal = document.getElementById("closeModal")
+        let dotsModal = document.getElementById("dotsModal")
+        navDots.addEventListener("click", () => dotsModal.classList.remove("modalDisplay"))
+
+        
+        closeModal.addEventListener("click", () => dotsModal.classList.add("modalDisplay"))
+        
+    </script>
