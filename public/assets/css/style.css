@@ -154,6 +154,7 @@ figcaption {
     text-align: right;
 }
 
+
 /* GENERAL STUFF DONE */
 
 /* DOTS MODAL STYLES */
@@ -301,10 +302,10 @@ figcaption {
     margin-bottom: 5rem;
     overflow-x: auto;
 }
-
+/* 
 .ftEngageGridContainer::-webkit-scrollbar {
     display: none;
-  }
+  } */
 
 .ftEngageGridContainer img {
     height: 3rem;
@@ -335,7 +336,7 @@ figcaption {
     width: 100%;
 }
 
-.littleAbout, .darkSectFlex, .ftNewsFlex, .footerLowerThird, .thinkingFlex {
+.littleAbout, .darkSectFlex, .ftNewsFlex, .footerLowerThird, .thinkingFlex{
     display: flex;
     justify-content: space-between;
 }
@@ -419,17 +420,17 @@ figcaption {
 
 .ftNewsImg, .thinkingImg {
     width: 30vw;
-    height: auto;
     margin-right: 1rem;
 }
 
-.ftNewsCopy {
+.ftNewsCopy, .thinkingCopy {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    width: 100%;
 }
 
-.ftNewsCopy h2 {
+.ftNewsCopy h2{
     width: 54.5%;
 }
 
@@ -474,11 +475,6 @@ figcaption {
 
 .workFigureOne img:nth-of-type(1), .workFigureOne video {
     margin-right: 1rem;
-}
-
-.figureDescription {
-    width: 40%;
-    padding-bottom: 2rem;
 }
 
 .workMainSect {
@@ -667,6 +663,7 @@ div.mainGridContent div > ul {
 
 /* THINKING STYLES */
 
+
 .thinkingCopyHL, .hlSectSubpage {
     display: flex;
 }
@@ -694,13 +691,6 @@ div.mainGridContent div > ul {
 
 .thinkingBrandbeats {
     margin-right: 5rem;
-}
-
-.thinkingCopy {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    align-items: stretch;
 }
 
 /* THINKING STYLES DONE */
