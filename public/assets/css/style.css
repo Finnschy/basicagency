@@ -462,6 +462,7 @@ figcaption {
 
 .workHLContent {
     border-right: 1px solid #000;
+    padding-right: 1rem;
 }
 
 .workContentHL {
@@ -469,7 +470,6 @@ figcaption {
 }
 
 .workContentCopy {
-    width: 90%;
     margin: 2.5rem 0;
 }
 
@@ -627,7 +627,11 @@ div.mainGridContent div > ul {
 }
 
 .aboutAwards h2, .aboutAwards p{
-    opacity: .8;
+    opacity: .5;
+}
+
+.aboutAwards h2:hover, .aboutAwards p:hover {
+    opacity: 1;
 }
 
 .aboutAwardsFlex{
